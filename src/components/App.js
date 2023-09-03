@@ -4,7 +4,11 @@ import Container from "./Container";
 function App() {
   return (
     <div className="App">
-      <Container header="Example header" direction="horizontal">
+      <Container
+        header="Example header"
+        direction="horizontal"
+        textPosition="center"
+      >
         <div>This is an example!</div>
         <div>This is an example!</div>
         <div>This is an example!</div>
@@ -30,6 +34,12 @@ function App() {
           alt="turtle"
           src="https://pbs.twimg.com/profile_images/3022993403/fdae67d800527328cee7a222f048dbbd.jpeg"
         />
+      </Container>
+      {/* uses the default value of textPosition */}
+      <Container header="Example header 3" direction="vertical">
+        <div>This is an example!</div>
+        <div>This is an example!</div>
+        <div>This is an example!</div>
       </Container>
     </div>
   );
